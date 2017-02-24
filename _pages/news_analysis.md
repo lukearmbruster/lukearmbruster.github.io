@@ -10,7 +10,7 @@ author_profile: true
 </kbd>
 
 ## Note
-<p style='text-align: justify;'>The following article is currently being revised. Please refer to the <a href="https://github.com/lukearmbruster/GA-DSI-4-Capstone_Project/blob/master/DSI_Capstone_Technical_Report.ipynb">technical report</a> or to the <a href="https://docs.google.com/presentation/d/1ZGF9nfiR4TT_wyTAbSi9_-NnaK7VUG8auo9ITJDpiJg/edit?usp=sharing">presentation</a> I gave recently in the meantime.</p>
+<p style='text-align: justify;'>The following article is currently being revised. Please refer to the <a href="https://github.com/lukearmbruster/GA-DSI-4-Capstone_Project/blob/master/DSI_Capstone_Technical_Report.ipynb">technical report</a> or the <a href="https://docs.google.com/presentation/d/1ZGF9nfiR4TT_wyTAbSi9_-NnaK7VUG8auo9ITJDpiJg/edit?usp=sharing">presentation</a> I gave recently in the meantime.</p>
 
 Thanks!
 
