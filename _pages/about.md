@@ -9,7 +9,7 @@ author_profile: false
 
 <div style="text-align:center">
 <kbd>
-<img src ="lukearmbruster.github.io/_pages/photo1.png">
+<img src ="lukearmbruster.github.io/_pages/photo1.png" style="width: 300px>
 </kbd>
 </div>
 
