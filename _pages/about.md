@@ -6,7 +6,7 @@ author_profile: false
 ---
 
 # About
-<div style="text-align:center"
+<div style="text-align:center">
 <kbd>
 <img src ="https://lukearmbruster.github.io/_pages/photo1.png" style="width: 500px">
 </kbd>
