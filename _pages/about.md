@@ -17,7 +17,7 @@ Born and raised in rural Southeast Missouri, I have lived near the California co
 ![alt text](a.png "profiles")
 
 <kbd>
-<img src="a.png" style="width: 100px">
+<img src="lukearmbruster.github.io/_pages/where.png" style="width: 100px">
 </kbd>
 
 On February 10, 2017, I graduated from a three-month data science immersive course through General Assembly in San Francisco. Upon completion, I acquired competence in python, machine learning, data visualization in Matplotlib and Seaborn, SQL, and Git by analyzing a variety of datasets, including an Ames housing dataset, a Yelp business characteristic and customer review dataset, and a categorized dataset of Facebook news posts.
