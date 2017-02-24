@@ -5,7 +5,7 @@ type: pages
 author_profile: false
 ---
 
-__# About__
+# _About_
 <div style="text-align:center">
 <kbd>
 <img src ="https://lukearmbruster.github.io/_pages/photo1.png" style="width: 500px">
