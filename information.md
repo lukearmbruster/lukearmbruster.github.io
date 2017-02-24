@@ -1,5 +1,4 @@
 ---
-permalink: ""
 layout: single
 type: pages
 author_profile: false
