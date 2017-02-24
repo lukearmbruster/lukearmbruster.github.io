@@ -7,7 +7,7 @@ author_profile: false
 
 # About
 <kbd>
-<img src ="lukearmbruster.github.io/_pages/photo1.png" style="width: 500px">
+<img src ="https://lukearmbruster.github.io/_pages/photo1.png" style="width: 500px">
 </kbd>
 
 
