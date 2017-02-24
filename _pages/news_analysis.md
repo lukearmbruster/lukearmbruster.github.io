@@ -10,7 +10,7 @@ author_profile: true
 </kbd>
 
 ## Note
-<p style='text-align: justify;'>The following non-technical article is currently being revised. Please refer to the technical article in the meantime.</p>
+<p style='text-align: justify;'>The following [non-technical article](https://github.com/lukearmbruster/GA-DSI-4-Capstone_Project/blob/master/DSI_Capstone_Technical_Report.ipynb) is currently being revised. Please refer to the technical article in the meantime.</p>
 
 Thanks!
 
