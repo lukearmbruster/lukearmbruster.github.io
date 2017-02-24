@@ -6,7 +6,7 @@ author_profile: false
 ---
 
 # About
-![some](where.png "profiles")
+![some](/where.png "profiles")
 
 <kbd>
 <img src="these.png">
