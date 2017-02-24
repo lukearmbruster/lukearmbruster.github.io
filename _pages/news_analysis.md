@@ -9,6 +9,13 @@ author_profile: true
 <img src ="https://lukearmbruster.github.io/_pages/cover.png" style="width: 1000px">
 </kbd>
 
+## Note
+<p style='text-align: justify;'>The following non-technical article is currently being revised. Please refer to the technical article in the meantime.</p>
+
+Thanks!
+
+Luke
+
 <a name="introduction"></a>
 ## Introduction
 Fake news is a very hot topic these days after the 2016 U.S. Presidential election. Facebook and Google are responding with their own actions to reduce the spread of fake news, including down-ranking in search results and pulling advertisements funds[[1](http://www.reuters.com/article/us-alphabet-advertising-idUSKBN1392MM),[2](https://techcrunch.com/2016/12/15/facebook-now-flags-and-down-ranks-fake-news-with-help-from-outside-fact-checkers/)]. The technological challenge of automatically tagging fake news without thoroughly cross-checking statements-a task only a human can accomplish well at this time, is a serious obstacle to preventing the spread of fake news [[3](https://qz.com/843110/can-artificial-intelligence-solve-facebooks-fake-news-problem/)]. Excited by the opportunity to address this unique and challenging technological challenge, I found the inspiration to tackle the following project.  
