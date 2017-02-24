@@ -6,8 +6,8 @@ author_profile: true
 ---
 # The News of Our Times
 <kbd>
-<img src="cover.png" style="width: 1000px">
-</kbd>  
+<img src ="lukearmbruster.github.io/_pages/cover.png" style="width: 1000px">
+</kbd>
 
 <a name="introduction"></a>
 ## Introduction

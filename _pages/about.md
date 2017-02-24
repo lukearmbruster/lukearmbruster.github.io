@@ -6,12 +6,10 @@ author_profile: false
 ---
 
 # About
-
-<div style="text-align:center">
 <kbd>
 <img src ="lukearmbruster.github.io/_pages/photo1.png" style="width: 500px">
 </kbd>
-</div>
+
 
 
 Born and raised in rural Southeast Missouri, I have lived near the California coast for over 10 years. During this time, I received a B.S. in environmental resources engineering from Humboldt State University and worked as an environmental consultant in San Francisco. Over the years of studying and consulting, I strongly gravitated to the data science aspects of my work, i.e. programming, statistical analysis, and modeling.
