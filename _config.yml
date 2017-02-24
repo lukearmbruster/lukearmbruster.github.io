@@ -80,11 +80,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Luke Armbruster"
-  avatar           : "/assets/images/profile_photo_1.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Scientist"
-  location         : "San Francisco
-  email            : "lukejarmbruster@gmail.com"
+  name             : #"Luke Armbruster"
+  avatar           : #"/assets/images/profile_photo_1.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : #"Data Scientist"
+  location         : #"San Francisco
+  email            : #"lukejarmbruster@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
