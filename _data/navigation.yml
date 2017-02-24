@@ -2,8 +2,10 @@
 main:
   - title: "The News of Our Times"
     url: lukearmbruster.github.io/news_categorized
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "About"
+    url: lukearmbruster.github.io/about
+  - title: "Contact Me"
+    url: lukearmbruster.github.io/contact
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
