@@ -6,7 +6,7 @@ author_profile: false
 ---
 
 # About
-![some](https://github.com/lukearmbruster/lukearmbruster.github.io/blob/master/_pages/where.png "profiles")
+![some](lukearmbruster.github.io/_pages/where.png "profiles")
 
 <kbd>
 <img src="these.png">
