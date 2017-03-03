@@ -9,14 +9,7 @@ author_profile: true
 <img src ="https://lukearmbruster.github.io/_pages/cover.png" style="width: 1000px">
 </kbd>
 
-## Note
-<p style='text-align: justify;'>The following article is currently being revised. Please refer to the <a href="https://github.com/lukearmbruster/GA-DSI-4-Capstone_Project/blob/master/DSI_Capstone_Technical_Report.ipynb">technical report</a> or the <a href="https://docs.google.com/presentation/d/1ZGF9nfiR4TT_wyTAbSi9_-NnaK7VUG8auo9ITJDpiJg/edit?usp=sharing">presentation</a> I gave recently in the meantime.</p>
-
-Thanks!
-
-Luke
-
-### Jump to Section
+## Jump to Section
 [Introduction](#introduction),
 [Project Objective](#project_objective),
 [Data Sources](#data_sources),
@@ -44,7 +37,8 @@ Luke
 [Figure 16](#figure_16),
 [Figure 17](#figure_17),
 [Conclusion](#conclusion),
-[Future Work](#future_work)
+[Future Work](#future_work),
+[More Information](#more_information)
 
 <a name="introduction"></a>
 ## Introduction
@@ -313,3 +307,7 @@ Values of model coefficients are evaluated against observations noted in the abo
 - Evaluate other feature engineering options to compare against the  performance of Lasso regularization.
 - Use GridSearch to vary the degree of regularization (i.e the C parameter).
 - To resolve the discrepancy between the results from the EDA and the examination of model coefficients as discussed above, discover why share coefficients for fake and conspiracy news are lower than share coefficients for mainstream and satire news.
+
+<a name="more_information"></a>
+## More Information
+<p style='text-align: justify;'>For more information, please refer to the <a href="https://github.com/lukearmbruster/GA-DSI-4-Capstone_Project/blob/master/DSI_Capstone_Technical_Report.ipynb">technical report with Python Code</a> or the <a href="https://docs.google.com/presentation/d/1ZGF9nfiR4TT_wyTAbSi9_-NnaK7VUG8auo9ITJDpiJg/edit?usp=sharing">presentation</a> I gave recently.</p>
