@@ -87,6 +87,7 @@ The following steps are taken to download and clean the data before performing e
 The following section explores characteristics of the dataset to better understand how the predictors perform in the final model.
 
 The final dataset includes over 274 thousand posts and over 900 million engagement activities from 129 Facebook pages. Though the number of mainstream sites are least represented in the dataset, mainstream posts are the second most common type of post ([Figure 1](#figure_1) and [Figure 2](#figure_2)).
+
 <br>
 <a name="figure_1"></a>
 <kbd>
