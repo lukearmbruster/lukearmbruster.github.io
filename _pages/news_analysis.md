@@ -239,7 +239,7 @@ A 57% mean accuracy is achieved on the test dataset with a test-train split of 3
 </kbd>
 ##### Figure 14
 <br>
-Nonetheless the model has apparent weaknesses. Precision and recall ranges between 54% (fake and satire) and 70% (conspiracy) and between 8% (conspiracy) and 77% (fake), respectively. As shown from in the normalized confusion matrix, low recall values result from the model predicting the majority of the conspiracy and satire posts as mainstream and fake ([Figure 15](#figure_15)). On a source level, this is confirmed, as nearly all high and low volume conspiracy and satire pages incorrectly predict several times the count of correct predictions ([Figure 16](#figure_16)). Fprnradio (conspiracy) and NewsThump (satire) are an exception to this case, with incorrect and correct counts relatively close. Elmundotoday (satire) and theunrealpage (satire) are also exceptions with the correct prediction count at least double the incorrect count.
+Nonetheless the model has apparent weaknesses. Precision and recall ranges between 54% (fake and satire) and 70% (conspiracy) and between 8% (conspiracy) and 77% (fake), respectively. As shown from in the normalized confusion matrix, low recall values result from the model predicting the majority of the conspiracy and satire posts as mainstream and fake ([Figure 15](#figure_15)).
 
 <br>
 <a name="figure_15"></a>
@@ -247,6 +247,8 @@ Nonetheless the model has apparent weaknesses. Precision and recall ranges betwe
 <img src ="https://lukearmbruster.github.io/_pages/Figure_15.png" style="width: 600px">
 </kbd>
 ##### Figure 15
+<br>
+On a source level, this is confirmed, as nearly all high and low volume conspiracy and satire pages incorrectly predict several times the count of correct predictions ([Figure 16](#figure_16)). Fprnradio (conspiracy) and NewsThump (satire) are an exception to this case, with incorrect and correct counts relatively close. Elmundotoday (satire) and theunrealpage (satire) are also exceptions with the correct prediction count at least double the incorrect count.
 <br>
 <a name="figure_16"></a>
 <kbd>
