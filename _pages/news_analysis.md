@@ -102,6 +102,7 @@ The final dataset includes over 274 thousand posts and over 900 million engageme
 ##### Figure 2
 <br>
 Only a handful of pages are posting and receiving the majority of the engagement, because the distribution of posts and level of engagement on pages shows a clear positive skew regardless of the type of news ([Figure 3](#figure_3)). I would expect a model built on the existing skewed dataset would perform disproportionately better for the sites with the most posts and the highest levels of engagement.
+
 <a name="figure_3"></a>
 <kbd>
 <img src ="https://lukearmbruster.github.io/_pages/Figure_3.png" style="width: 1300px">
@@ -109,6 +110,7 @@ Only a handful of pages are posting and receiving the majority of the engagement
 ##### Figure 3
 <br>
 Now specific characteristics of model predictors are explored with respect to posts and engagement activities. If differences are observed in the patterns of posts among the different types of news with respect to the various predictors, they may be reflected in the final model as relatively high model coefficients in terms of absolute value. First, the frequency of the different post attachments and engagement level by the type of news is investigated. Upon inspection, all types of news have posts with links more frequently than any other type of attachment, and all but conspiracy also show links receiving the highest percent of engagement compared with all other types of attachment ([Figure 4](#figure_4)). However, with respect to the second most frequent type of attachment, mainstream pages post videos more frequently than all other types of news. Therefore, I would expect the model to show a relatively high coefficient for mainstream videos relative to the coefficient for videos from all other types of news.
+
 <br>
 <a name="figure_4"></a>
 <kbd>
@@ -117,6 +119,7 @@ Now specific characteristics of model predictors are explored with respect to po
 ##### Figure 4
 <br>
 Next the frequency of posts and level of engagement are investigated with respect to the U.S. Presidential Election. The most drastic change in post volume occurred in the form of a reduction in fake news after the election, in large part due to a reduction in post volume among the top three most prolific sources ([Figure 5](#figure_5) and [Figure 6](#figure_6)). Nevertheless, engagement activities associated with fake news increased most drastically second only to the spike in engagement among mainstream news-in part due to an increase in post volume ([Figure 5](#figure_5)). The spike in engagement to mainstream news occurred largely due to relatively high engagement with posts from CNN, ABC News, and USA Today ([Figure 7](#figure_7)). Due to the noticeable reduction in the percentage of posts from fake news after the election, the final model may have a relatively high pre-Presidential Election fake news model coefficient compared to the post-Presidential Election fake news model coefficient.
+
 <br>
 <a name="figure_5"></a>
 <kbd>
@@ -137,6 +140,7 @@ Next the frequency of posts and level of engagement are investigated with respec
 ##### Figure 7
 <br>
 An inspection of the frequency of posts and level of engagement over the days of the week reveals a noticeable dip in the volume of posts and engagement activities occurs on Saturday and Sunday relative to other days of the week  regardless of the type of news ([Figure 8](#figure_8)). Due to the low variation of post frequency among different types of news throughout the week, I would expect the model not to show relatively large coefficients with respect to this predictor.
+
 <br>
 <a name="figure_8"></a>
 <kbd>
@@ -145,6 +149,7 @@ An inspection of the frequency of posts and level of engagement over the days of
 ##### Figure 8
 <br>
 With respect to the hours of the day, posts peak during working hours when considering the four time zones spanning the lower 48 U.S. states, regardless of the type of news ([Figure 9](#figure_9)). Differences in the posting time is relatively small between the different types of news with the exception of satire news, which shows a considerable peak between 6 am and 12 pm (Pacific Standard Time). Interestingly, engagement levels appear relatively uniform over the hours of a day in comparison to post hours, indicating widespread engagement among users around the world and/or late night users. Relative to other types of news, engagement levels among conspiracy sites appear to be most uniform across all times, while engagement levels among satire pages spike at a time when posts peak, i.e. between 6 am and 7 am. With little difference in the pattern of posts over the hours of the day between different types of news with the exception of satire news, model coefficients for hours of the day for mainstream, fake and conspiracy news are expected to be relatively low in comparison to the model coefficient for hours of the day for satire news.
+
 <br>
 <a name="figure_9"></a>
 <kbd>
@@ -157,6 +162,7 @@ The model also includes predictors for each type of engagement activity. To comp
 Like followed by share is the most common engagement action in response to a post ([Figure 10](#figure_10)). High variability in engagement actions is observed for all types of news relative to the mean value. Interestingly, satire shows the second highest mean engagement activity but has the lowest total engagement among all types of news. Perhaps unsurprisingly, satire has a noticeably higher mean volume of haha compared with the mean volume of haha for other types of news. Furthermore, haha is the second or third most common engagement response among individual satire pages ([Figure 11](#figure_11)). Therefore, I would expect the final model to show haha model coefficient for satire to be relatively higher than the haha coefficients for all other types of news. Nonetheless, more satire posts covering a longer period of time and including more satire sources are needed to better understand and compare with other types of engagement, because the project dataset contains far fewer satire posts relative to all other types of news ([Figure 10](#figure_10)).
 
 Upon further inspection, other patterns also emerge. Share and comment are the second or third most common engagement actions from satire news pages or highly engaged mainstream news pages, i.e. Fox News. and cnn, but relatively less common as a proportion of other engagement actions among remaining mainstream sources ([Figure 11](#figure_11)). Among fake and conspiracy news, share again is the second most common engagement type (sometimes most common), and the proportion of share in response to fake and conspiracy posts appears to be greater relative to the proportion of shares among mainstream and satire news. Based on these observations, I would expect the final model to have higher share coefficients for fake and conspiracy pages relative to the share coefficients for mainstream and satire pages.
+
 <br>
 <a name="figure_10"></a>
 <kbd>
@@ -180,6 +186,7 @@ Upon further inspection, other patterns also emerge. Share and comment are the s
 ##### Figure 11
 <br>
 Correlations of the main quantitative predictors are examined to determine the appropriate setting for regularization in the final model. When examining correlation heat maps, no strong correlations appear between engagement activities and/or between time periods (i.e. hour or day of week regardless of the type of news ([Figure 12](#figure_12)). Therefore, regularization with lasso appears to be a suitable setting in the final model.
+
 <a name="figure_12"></a>
 <kbd>
 <img src ="https://lukearmbruster.github.io/_pages/Figure_12.png" style="width: 700px">
@@ -191,6 +198,7 @@ The remaining predictors that are not investigated above are important monograms
 In detail, three steps are followed to generate the list of important monograms and bigrams from post messages. First, four lists of the most frequent 6,000 words for each type of news is generated using a count vectorizer. Next the term frequency inverse document frequency (TF-IDF) is calculated, and the 6,000 words with the highest TF-IDF score are selected if the word is identified in only one of the four lists. The resulting list contained only 793 words with TF-IDF scores. The list was further reduced to 505 words in order to remove meaningless words or ones that were closely associated with an individual page (e.g. the name of the page or a host of a particular news program).
 
 When evaluating correlations for each type of news, mainstream news has relatively high correlations between haha and comment (positive correlation [+]), angry and comment (+), wow and share (+), love and like (+), like and comment (negative correlation [-]), like and share (-), wow and like (-), haha and like (-), sad and like (-), and angry and like (-) ([Figure 13](#figure_13)). Fake news has relatively high correlations between angry and comment (+), and like and share (-). Also, satire news has relatively high correlations like and share (-).
+
 <br>
 <a name="figure_13"></a>
 <kbd>
@@ -218,6 +226,7 @@ The predictors of the final model include important monograms and bigrams from p
 <a name="model_evaluation"></a>
 ## Model Results and Evaluation
 A 57% mean accuracy is achieved on the test dataset with a test-train split of 70%-30%, which translates to an increase of 16% above baseline. The areas under the receiver operating characteristic (ROC) curves range from 74% (fake and conspiracy) to 86% (satire) indicating a well-performing model on the test dataset ([Figure 14](#figure_14)). Therefore, a quantifiable degree of success is achieved when relying on the source list compiled by Dr. Melissa Zimdars to predict the type of news of a Facebook post from specific post features.
+
 <br>
 <a name="figure_1"></a>
 <kbd>
@@ -226,6 +235,7 @@ A 57% mean accuracy is achieved on the test dataset with a test-train split of 7
 ##### Figure 14
 <br>
 Nonetheless the model has apparent weaknesses. Precision and recall ranges between 54% (fake and satire) and 70% (conspiracy) and between 8% (conspiracy) and 77% (fake), respectively. Low recall values result from the model predicting the majority of the conspiracy and satire posts as mainstream and fake ([Figure 15](#figure_15)). On a source level, this is confirmed, as nearly all high and low volume conspiracy and satire pages incorrectly predict several times the count of correct predictions ([Figure 16](#figure_16)). Fprnradio (conspiracy) and NewsThump (satire) are an exception to this case, with incorrect and correct counts relatively close. Elmundotoday (satire) and theunrealpage (satire) are also exceptions with the correct prediction count at least double the incorrect count.
+
 <br>
 <a name="figure_15"></a>
 <kbd>
@@ -250,7 +260,8 @@ Nonetheless the model has apparent weaknesses. Precision and recall ranges betwe
 <br>
 Although all types of news have only a few sources that post a large portion of the total volume and receive much of the engagement ([Figure 3](#figure_3)), the model is not overfitting to the characteristics of the most prolific or engaged pages. Using the test dataset, a review of the classified and misclassified posts by page confirms this observation. Both high and low volume fake and mainstream news pages are classified as their true class more often than misclassified, i.e. for 70% and 80% of posts, respectively ([Figure 15](#figure_15)). Also, nearly all the posts for high and low volume conspiracy and satire pages are misclassified several times more than than the correctly classified posts ([Figure 16](#figure_16)).
 
-Overall, the final model shows the highest model coefficients for engagement actions and n-grams ([Figure 17](#figure_17)). The highest model coefficients for mainstream news are associated with the following predictors: likes (+), comments (+), sads (+), neverhillary (-), angrys (+). The highest model coefficients for fake news among predictors include the following: follow american (+), follow deplorable (+), stop cheering (+), share expose (+), and sads (-). Also, the highest model coefficients for conspiracy news are associated with the following predictors: comments (-), follow american (-), tour ticket (+), follow deplorable (-), hahas (-). Finally, the highest model coefficients for satire news include: likes (+), loves (-), hahas (+), angrys (-), neverhillary (-).
+Overall, the final model shows the highest model coefficients for engagement actions and n-grams ([Figure 17](#figure_17)). The highest model coefficients for mainstream news are associated with the following predictors: likes (positive value [+]), comments (+), sads (+), neverhillary (negative value [-]), angrys (+). The highest model coefficients for fake news among predictors include the following: follow american (+), follow deplorable (+), stop cheering (+), share expose (+), and sads (-). Also, the highest model coefficients for conspiracy news are associated with the following predictors: comments (-), follow american (-), tour ticket (+), follow deplorable (-), hahas (-). Finally, the highest model coefficients for satire news include: likes (+), loves (-), hahas (+), angrys (-), neverhillary (-).
+
 <br>
 <a name="figure_17"></a>
 <kbd>
