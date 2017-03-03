@@ -120,12 +120,12 @@ Next the frequency of posts and level of engagement are investigated with respec
 ##### Figure 5
 
 <kbd>
-<img src ="https://lukearmbruster.github.io/_pages/Figure_6.png" style="width: 1000px">
+<img src ="https://lukearmbruster.github.io/_pages/Figure_6.png" style="width: 500px">
 </kbd>
 ##### Figure 6
 
 <kbd>
-<img src ="https://lukearmbruster.github.io/_pages/Figure_7.png" style="width: 1000px">
+<img src ="https://lukearmbruster.github.io/_pages/Figure_7.png" style="width: 500px">
 </kbd>
 ##### Figure 7
 
