@@ -208,7 +208,7 @@ The predictors of the final model include important monograms and bigrams from p
 A 57% mean accuracy is achieved on the test dataset with a test-train split of 70%-30%, which translates to an increase of 16% above baseline. The areas under the receiver operating characteristic (ROC) curves range from 74% (fake and conspiracy) to 86% (satire) indicating a well-performing model on the test dataset. ([Figure 14](#figure_14)) Therefore, a quantifiable degree of success is achieved when relying on the source list compiled by Dr. Melissa Zimdars to predict the type of news of a Facebook post from specific post features.
 
 <kbd>
-<img src ="https://lukearmbruster.github.io/_pages/Figure_14.png" style="width: 1000px">
+<img src ="https://lukearmbruster.github.io/_pages/Figure_14.png" style="width: 600px">
 </kbd>
 ##### Figure 14
 <br>
