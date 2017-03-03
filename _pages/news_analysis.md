@@ -155,7 +155,16 @@ Upon further inspection, other patterns also emerge. Share and comment are the s
 ##### Figure 10
 
 <kbd>
-<img src ="https://lukearmbruster.github.io/_pages/Figure_11.png" style="width: 1000px">
+<img src ="https://lukearmbruster.github.io/_pages/Figure_11M.png" style="width: 1000px">
+</kbd>
+<kbd>
+<img src ="https://lukearmbruster.github.io/_pages/Figure_11F.png" style="width: 1000px">
+</kbd>
+<kbd>
+<img src ="https://lukearmbruster.github.io/_pages/Figure_11C.png" style="width: 1000px">
+</kbd>
+<kbd>
+<img src ="https://lukearmbruster.github.io/_pages/Figure_11S.png" style="width: 1000px">
 </kbd>
 ##### Figure 11
 
@@ -211,7 +220,16 @@ Nonetheless the model has apparent weaknesses. Precision and recall ranges betwe
 ##### Figure 15
 
 <kbd>
-<img src ="https://lukearmbruster.github.io/_pages/Figure_16.png" style="width: 1000px">
+<img src ="https://lukearmbruster.github.io/_pages/Figure_16M.png" style="width: 1000px">
+</kbd>
+<kbd>
+<img src ="https://lukearmbruster.github.io/_pages/Figure_16F.png" style="width: 1000px">
+</kbd>
+<kbd>
+<img src ="https://lukearmbruster.github.io/_pages/Figure_16C.png" style="width: 1000px">
+</kbd>
+<kbd>
+<img src ="https://lukearmbruster.github.io/_pages/Figure_16S.png" style="width: 1000px">
 </kbd>
 ##### Figure 16
 
