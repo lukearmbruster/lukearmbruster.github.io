@@ -139,7 +139,7 @@ An inspection of the frequency of posts and level of engagement over the days of
 With respect to the hours of the day, posts peak during working hours when considering the four time zones spanning the lower 48 U.S. states, regardless of the type of news. Differences in the posting time is relatively small between the different types of news with the exception of satire news, which shows a considerable peak between 6 am and 12 pm (Pacific Standard Time). Interestingly, engagement levels appear relatively uniform over the hours of a day in comparison to post hours, indicating widespread engagement among users around the world and/or late night users. Relative to other types of news, engagement levels among conspiracy sites appear to be most uniform across all times, while engagement levels among satire pages spike at a time when posts peak, i.e. between 6 am and 7 am. ([Figure 9](#figure_9)) With little difference in the pattern of posts over the hours of the day between different types of news with the exception of satire news, model coefficients for hours of the day for mainstream, fake and conspiracy news are expected to be relatively low in comparison to the model coefficient for hours of the day for satire news.
 
 <kbd>
-<img src ="https://lukearmbruster.github.io/_pages/Figure_9.png" style="width: 1000px">
+<img src ="https://lukearmbruster.github.io/_pages/Figure_9.png" style="width: 1300px">
 </kbd>
 ##### Figure 9
 <br>
@@ -238,7 +238,7 @@ Although all types of news have only a few sources that post a large portion of 
 Overall, the final model shows the highest model coefficients for engagement actions and n-grams. The highest model coefficients for mainstream news are associated with the following predictors: likes (positive [+]), comments (+), sads (+), neverhillary (negative [-]), angrys (+). The highest model coefficients for fake news among predictors include the following: follow american (+), follow deplorable (+), stop cheering (+), share expose (+), and sads (-). Also, the highest model coefficients for conspiracy news are associated with the following predictors: comments (-), follow american (-), tour ticket (+), follow deplorable (-), hahas (-). Finally, the highest model coefficients for satire news include: likes (+), loves (-), hahas (+), angrys (-), neverhillary (-). ([Figure 17](#figure_17))
 
 <kbd>
-<img src ="https://lukearmbruster.github.io/_pages/Figure_17.png" style="width: 1000px">
+<img src ="https://lukearmbruster.github.io/_pages/Figure_17.png" style="width: 1500px">
 </kbd>
 ##### Figure 17
 <br>
