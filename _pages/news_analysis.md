@@ -215,7 +215,7 @@ A 57% mean accuracy is achieved on the test dataset with a test-train split of 7
 Nonetheless the model has apparent weaknesses. Precision and recall ranges between 54% (fake and satire) and 70% (conspiracy) and between 8% (conspiracy) and 77% (fake), respectively. Low recall values result from the model predicting the majority of the conspiracy and satire posts as mainstream and fake. ([Figure 15](#figure_15)) On a source level, this is confirmed, as nearly all high and low volume conspiracy and satire pages incorrectly predict several times the count of correct predictions. Fprnradio (conspiracy) and NewsThump (satire) are an exception to this case, with incorrect and correct counts relatively close. Elmundotoday (satire) and theunrealpage (satire) are also exceptions with the correct prediction count at least double the incorrect count. ([Figure 16](#figure_16))
 
 <kbd>
-<img src ="https://lukearmbruster.github.io/_pages/Figure_15.png" style="width: 700px">
+<img src ="https://lukearmbruster.github.io/_pages/Figure_15.png" style="width: 600px">
 </kbd>
 ##### Figure 15
 <br>
