@@ -93,6 +93,7 @@ The final dataset includes over 274 thousand posts and over 900 million engageme
 </kbd>
 ##### Figure 1
 
+
 <kbd>
 <img src ="https://lukearmbruster.github.io/_pages/Figure_2.png" style="width: 1000px">
 </kbd>
@@ -171,7 +172,7 @@ Upon further inspection, other patterns also emerge. Share and comment are the s
 Correlations of the main quantitative predictors are examined to determine the appropriate setting for regularization in the final model. When examining correlation heat maps, no strong correlations appear between engagement activities and/or between time periods (i.e. hour or day of week regardless of the type of news. ([Figure 12](#figure_12)) Therefore, regularization with lasso appears to be a suitable setting.
 
 <kbd>
-<img src ="https://lukearmbruster.github.io/_pages/Figure_12.png" style="width: 1000px">
+<img src ="https://lukearmbruster.github.io/_pages/Figure_12.png" style="width: 700px">
 </kbd>
 ##### Figure 12
 
