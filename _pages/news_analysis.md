@@ -21,7 +21,7 @@ Luke
 [Project Objective](#project_objective),
 [Data Sources](#data_sources),
 [Assumptions](#assumptions),
-[Importing, Cleaning, and Supplementing the Data](#importing),
+[Importing and Cleaning, and Merging the Data](#importing),
 [Exploratory Data Analysis (EDA)](#eda),
 [Figure 1](#figure_1),
 [Figure 2](#figure_2),
@@ -37,16 +37,14 @@ Luke
 [Figure 12](#figure_12),
 [Figure 13](#figure_13),
 [EDA Summary](#eda_summary),
-[Logistic Regression Model](#logistic_regression_model)
 [Model Building](#model_building),
 [Model Results and Evaluation](#model_evaluation),
 [Figure 14](#figure_14),
 [Figure 15](#figure_15),
 [Figure 16](#figure_16),
 [Figure 17](#figure_17),
-[Figure 18](#figure_18),
-[Conclusion](#conclusion)
-[Further Work](#future_work)
+[Conclusion](#conclusion),
+[Future Work](#future_work)
 
 <a name="introduction"></a>
 ## Introduction
@@ -60,7 +58,7 @@ This project analyzes posts from a period spanning 73 days before and after the 
 
 - Leverage differences between types of news to build a multiclass logistic regression model that tags a shared Facebook news post by type using important monograms and bigrams from post messages, patterns in engagement activities, type of post attachment (e.g. image, video, none, etc.) and various factors of time (i.e. day of week, hour of day, and timing of election [i.e. before, same day, or after]). A regression model is appropriate for the purposes of this project to identify the most important model features via model coefficients. The value of an appropriately calibrated model could help Facebook identify what posts to flag for taking actions to disincentivize the dissemination of fake news or for use by computational journalists to track the issues related to fake news to meet future reporting responsibilities.
 
-<a name="#data_sources"></a>
+<a name="data_sources"></a>
 ## Data Sources
 This project generates the project dataset by taking the following steps:
 1. A list of mainstream news sites is generated using a [Pew Research study published on October 21, 2014, Political Polarization & Media Habits: From Fox News to Facebook, How Liberals and Conservatives Keep Up with Politics](http://www.journalism.org/2014/10/21/political-polarization-media-habits/). Comprising the list are well-known sources more trusted than not by the general public as identified in the study.
@@ -76,7 +74,7 @@ This project generates the project dataset by taking the following steps:
 - The logit of the probabilities of the types of news are linear with respect to the model parameters.
 
 <a name="importing"></a>
-## Importing, Cleaning, and Supplementing the Data
+## Importing, Cleaning, and Merging the Data
 The following steps are taken to download and clean the data before performing exploratory data analysis (EDA):
 1. Post information is compiled to a local drive via Facebook's Graph API by making modifications to a Python code provided by another [programmer](https://drive.google.com/file/d/0Bw1LIIbSl0xuRTNCZElUa3U1b1U/view). Data extracted from Facebook include post message, title of link, type of link, post date, and individual counts of comments, shares, likes, loves, wows, hahas, sads, and angrys.
 2. Additional columns were generated from the existing dataset or merged with known existing information to make a more detailed final dataset showing Facebook page id, type of news page (i.e. mainstream, fake, conspiracy, or satire), day of week, hour, timing of election, and count of all user engagement activities (i.e. comments, shares, likes, loves, wows, hahas, sads, and angrys).
@@ -85,12 +83,20 @@ The following steps are taken to download and clean the data before performing e
 5. All urls are removed from post messages to avoid selecting when identifying important monograms and bigrams from post messages.
 
 <a name="eda"></a>
-[Exploratory Data Analysis (EDA)](#eda)
+## Exploratory Data Analysis (EDA)
 The following section explores characteristics of the dataset to better understand how the predictors perform in the final model.
 
 The final dataset includes over 274 thousand posts and over 900 million engagement activities from 129 Facebook pages. Though the number of mainstream sites are least represented in the dataset, mainstream posts are the second most common type of post.
 
-insert figure 1 and 2
+<kbd>
+<img src ="https://lukearmbruster.github.io/_pages/Figure_1.png" style="width: 1000px">
+</kbd>
+**Figure 1**
+
+<kbd>
+<img src ="https://lukearmbruster.github.io/_pages/Figure_2.png" style="width: 1000px">
+</kbd>
+**Figure 2**
 
 Only a handful of pages are posting and receiving the majority of the engagement, because the distribution of posts and level of engagement on pages shows a clear positive skew regardless of the type of news. I would expect a model built on the existing skewed dataset would perform disproportionately better for the sites with the most posts and the highest levels of engagement.
 
@@ -153,11 +159,17 @@ The predictors of the final model include important monograms and bigrams from p
 ## Model Results and Evaluation
 A 57% mean accuracy is achieved on the test dataset with a test-train split of 70%-30%, which translates to an increase of 16% above baseline. The areas under the receiver operating characteristic (ROC) curves range from 74% (fake and conspiracy) to 86% (satire) indicating a well-performing model on the test dataset. ([Figure 14](#figure_14)) Therefore, a quantifiable degree of success is achieved when relying on the source list compiled by Dr. Melissa Zimdars to predict the type of news of a Facebook post from specific post features.
 
+insert Figure 14
+
 Nonetheless the model has apparent weaknesses. Precision and recall ranges between 54% (fake and satire) and 70% (conspiracy) and between 8% (conspiracy) and 77% (fake), respectively. Low recall values result from the model predicting the majority of the conspiracy and satire posts as mainstream and fake. ([Figure 15](#figure_15)) On a source level, this is confirmed, as nearly all high and low volume conspiracy and satire pages incorrectly predict several times the count of correct predictions. Fprnradio (conspiracy) and NewsThump (satire) are an exception to this case, with incorrect and correct counts relatively close. Elmundotoday (satire) and theunrealpage (satire) are also exceptions with the correct prediction count at least double the incorrect count. ([Figure 16](#figure_16))
+
+insert Figure 15-16
 
 Although all types of news have only a few sources that post a large portion of the total volume and receive much of the engagement ([Figure 3](#figure_3)), the model is not overfitting to the characteristics of the most prolific or engaged pages. Using the test dataset, a review of the classified and misclassified posts by page confirms this observation. Both high and low volume fake and mainstream news pages are classified as their true class more often than misclassified, i.e. for 70% and 80% posts, respectively. Also, nearly all the posts for high and low volume conspiracy and satire sources are misclassified several times more than than the correctly classified posts. ([Figure 16](#figure_16))
 
 Overall, the final model shows the highest model coefficients for engagement actions and n-grams. The highest model coefficients for mainstream news are associated with the following predictors: likes (positive [+]), comments (+), sads (+), neverhillary (negative [-]), angrys (+). The highest model coefficients for fake news among predictors include the following: follow american (+), follow deplorable (+), stop cheering (+), share expose (+), and sads (-). Also, the highest model coefficients for conspiracy news are associated with the following predictors: comments (-), follow american (-), tour ticket (+), follow deplorable (-), hahas (-). Finally, the highest model coefficients for satire news include: likes (+), loves (-), hahas (+), angrys (-), neverhillary (-). ([Figure 17](#figure_17))
+
+Insert Figure 17
 
 Values of model coefficients are evaluated against observations noted in the above exploratory data analysis to further assess the performance of the model. These evaluations are summarized in the list below:
 - As discussed above, mainstream pages post videos more frequently than all other types of news. ([Figure 4](#figure_4)) Upon inspection of the model coefficients, this observation is reflected in a relatively high model coefficient for mainstream videos compared with video coefficients for other types of news. ([Figure 17](#figure_17))
