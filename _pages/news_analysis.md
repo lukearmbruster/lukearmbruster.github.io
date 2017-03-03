@@ -101,7 +101,7 @@ The final dataset includes over 274 thousand posts and over 900 million engageme
 Only a handful of pages are posting and receiving the majority of the engagement, because the distribution of posts and level of engagement on pages shows a clear positive skew regardless of the type of news. I would expect a model built on the existing skewed dataset would perform disproportionately better for the sites with the most posts and the highest levels of engagement.
 
 <kbd>
-<img src ="https://lukearmbruster.github.io/_pages/Figure_3.png" style="width: 1000px">
+<img src ="https://lukearmbruster.github.io/_pages/Figure_3.png" style="width: 1300px">
 </kbd>
 ##### Figure 3
 <br>
