@@ -220,7 +220,7 @@ When evaluating correlations for each type of news, mainstream news has relative
 
 A logistic regression model is appropriate in this project in order to categorize the news by type using categorical and numeric predictors. Once the model is built, model coefficients indicate relative importance of predictors that can provide insight into distinct characteristics of posts and engagement with posts for each type of news.
 
-Again, the predictors of the final model include important monograms and bigrams from post messages, patterns in engagement activities, type of post attachment (e.g. image, video, none, etc.) and various factors of time (i.e. day of week, hour of day, and timing of election [i.e. before, same day, or after]). All default settings for the logistic regression model in Scikit-Learn are maintained except for the specification of lasso regularization as justified above as well as an increase in the maximum number of iterations allowed.
+Again, the predictors of the final model include important monograms and bigrams from post messages, patterns in engagement activities, type of post attachment (e.g. image, video, none, etc.) and various factors of time (i.e. day of week, hour of day, and timing of election [i.e. before, same day, or after]). All default settings for the logistic regression model in Scikit-Learn are maintained except for the specification of lasso regularization as justified above and an increase in the maximum number of iterations for model convergence.
 
 <a name="model_evaluation"></a>
 ## Model Results and Evaluation
@@ -233,7 +233,7 @@ A 57% mean accuracy is achieved on the test dataset with a test-train split of 3
 </kbd>
 ##### Figure 14
 <br>
-Nonetheless the model has apparent weaknesses. Precision and recall ranges between 54% (fake and satire) and 70% (conspiracy) and between 8% (conspiracy) and 77% (fake), respectively. As shown from in the normalized confusion matrix, low recall values result from the model predicting the majority of the conspiracy and satire posts as mainstream and fake ([Figure 15](#figure_15)).
+Nonetheless the model has apparent weaknesses. Precision and recall ranges between 54% (fake and satire) and 70% (conspiracy) and between 8% (conspiracy) and 77% (fake), respectively. As shown in the normalized confusion matrix, low recall values result from the model predicting the majority of the conspiracy and satire posts as mainstream and fake ([Figure 15](#figure_15)).
 
 <br>
 <a name="figure_15"></a>
