@@ -46,7 +46,7 @@ Fake news is a very hot topic these days after the 2016 U.S. Presidential electi
 
 <a name="project_objective"></a>
 ## Project Objective
-This project analyzes posts from a period spanning 73 days before and after the U.S. Presidential election (from August 26, 2016, to January 20, 2017) on Facebook news pages to explore the affect of the election on posting and engagement by type of news as well as meet the following objectives:
+This project analyzes posts from a period spanning 73 days before and after the U.S. Presidential election (from August 26, 2016, to January 20, 2017) on Facebook news pages to explore the effect of the election on posting and engagement by type of news as well as meet the following objectives:
 
 - Identify some of the factors that could uniquely identify whether a shared Facebook news post is from a mainstream, fake, conspiracy, or satire source. I suspect that the differences between fake, conspiracy, and satire sources are subtle, and, therefore, the potential minute differences between them would need to be inspected more closely than merely an inspection between mainstream and fake news. For this reason, a multiclass inspection over a binary one (i.e. fake and not fake news) is preferred in this project.
 
