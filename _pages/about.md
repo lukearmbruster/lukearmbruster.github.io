@@ -19,4 +19,4 @@ Born and raised in rural Southeast Missouri, I have lived near the California co
 
 <p style='text-align: justify;'>My capstone project tackled the challenge of categorizing news as mainstream, fake, conspiracy, and satire. Model features included various user engagement activities and word usage in Facebook post messages. With the final multiclass logistic regression model, I achieved an accuracy score of 16% above the baseline on the test dataset.</p>
 
-<p style='text-align: justify;'>I am eager to apply my core technical data science skills as well as my soft skills in communicating technical ideas to a broad audience in a range of projects from sustainability to finance. Please let me know if you are interested in working with me on a project of interest to you. I would be happy to help!</p>
+<p style='text-align: justify;'>I am eager to apply my core technical data science skills as well as my soft skills in communicating technical ideas to a broad audience in a range of projects from sustainability to finance. Please let me know if you would like to team up and work on a project of interest to you. I would be happy to help!</p>
