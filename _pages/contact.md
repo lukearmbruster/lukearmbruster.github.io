@@ -10,4 +10,5 @@ author_profile: true
 
 Email: lukejarmbruster@gmail.com  
 LinkedIn: [https://www.linkedin.com/in/lukearmbruster/](https://www.linkedin.com/in/lukearmbruster/)
+
 Resume: [website](https://lukearmbruster.github.io/lukearmbruster.github.io/resume)
