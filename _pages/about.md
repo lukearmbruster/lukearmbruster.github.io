@@ -11,7 +11,7 @@ author_profile: false
 </kbd>
 </div>  
 
-
+<p style='text-align: justify;'>
 <br>
 Born and raised in rural Southeast Missouri, I have lived near the California coast for over 10 years. During this time, I received a B.S. in environmental resources engineering from Humboldt State University (<a href="https://www.slideshare.net/slideshow/embed_code/key/m90VDSDlJWG5rv">See portfolio</a>) and worked as an environmental consultant in San Francisco. Over the years of studying and consulting, I strongly gravitated to the data science aspects of my work, i.e. programming, statistical analysis, and modeling.</p>
 
