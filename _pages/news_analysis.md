@@ -296,4 +296,4 @@ Values of model coefficients were evaluated against observations noted in the ab
 
 <a name="more_information"></a>
 ## More Information
-<p style='text-align: justify;'>For more information, please refer to the <a href="https://github.com/lukearmbruster/GA-DSI-4-Capstone_Project/blob/master/DSI_Capstone_Technical_Report.ipynb">technical report with Python Code</a> or the <a href="https://docs.google.com/presentation/d/1ZGF9nfiR4TT_wyTAbSi9_-NnaK7VUG8auo9ITJDpiJg/edit?usp=sharing">presentation</a> I gave recently.</p>
+<p style='text-align: justify;'>For more information, please refer to the <a href="https://github.com/lukearmbruster/GA-DSI-4-Capstone_Project/blob/master/DSI_Capstone_Technical_Report.ipynb">technical report with Python Code</a> or the <a href="https://docs.google.com/presentation/d/1ZGF9nfiR4TT_wyTAbSi9_-NnaK7VUG8auo9ITJDpiJg/edit?usp=sharing">presentation</a> I gave recently. Extensions of this work can also be viewed on <a href="https://public.tableau.com/profile/luke.armbruster3389#!/">Tableau Public</a>.</p>
