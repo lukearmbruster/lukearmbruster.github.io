@@ -6,7 +6,6 @@ author_profile: true
 ---
 
 # Sample of Past Projects
-
 (In order of most recent)
 - An evaluation of key performance indicators (KPI) for a subset of the World of Warcraft (WOW) dataset on Kaggle using the Python programming language: [Jupyter Notebook](https://github.com/lukearmbruster/WOW_KPI_EDA/blob/master/WOW_KPI_EDA.ipynb)
 - An attempt to classify mainstream, fake, conspiracy and satire news posted on Facebook using the Python programming language: [Portfolio](https://lukearmbruster.github.io/lukearmbruster.github.io/news_categorized), [Medium](https://medium.com/@lukearmbruster/the-news-of-our-times-f8e5fdc0999a#.b12fa2e1z)
