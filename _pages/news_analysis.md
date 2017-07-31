@@ -4,7 +4,6 @@ layout: single
 type: pages
 author_profile: true
 ---
-# The News of Our Times
 <kbd>
 <img src ="https://lukearmbruster.github.io/_pages/coverd.jpg" style="width: 1000px">
 </kbd>
