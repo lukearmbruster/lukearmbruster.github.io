@@ -4,7 +4,8 @@ layout: single
 type: pages
 author_profile: true
 ---
-# Sample of Past Programming Projects
+
+
 # Test
 (In order of most recent)
 - A tool to extract footnotes and in-text citations from several word documents (.docx) and show similarities: [Jupyter Notebook](extract_footnotes_citations.html)
