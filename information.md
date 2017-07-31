@@ -4,7 +4,7 @@ layout: single
 type: pages
 author_profile: true
 ---
-
+# Sample of Past Programming Projects 
 (In order of most recent)
 - A tool to extract footnotes and in-text citations from several word documents (.docx) and show similarities: [Jupyter Notebook](extract_footnotes_citations.html)
 - A tool to show how many pledges are needed for a successful crowdfunding campaign based on a model fit on campaign data covering several months in 2017: [Jupyter Notebook](Indiegogo_Pledges_Needed.html), [Github](https://github.com/lukearmbruster/successful_crowdfunding/tree/master)
