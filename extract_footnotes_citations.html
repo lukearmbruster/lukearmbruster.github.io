@@ -11767,7 +11767,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[107]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Read in packages for program</span>
@@ -11786,7 +11786,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[121]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Read zip container and retrieve xml</span>
@@ -11905,7 +11905,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[125]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Add section names to dataframe</span>
@@ -11922,11 +11922,11 @@ div#notebook {
     <span class="n">xml_from_file</span> <span class="o">=</span> <span class="n">get_word_xml</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="s1">&#39;footnotes&#39;</span><span class="p">)</span>
     <span class="n">xml_tree</span> <span class="o">=</span> <span class="n">get_xml_tree</span><span class="p">(</span><span class="n">xml_from_file</span><span class="p">)</span>
     <span class="n">temp</span><span class="o">=</span><span class="n">get_footnotes</span><span class="p">(</span><span class="n">xml_tree</span><span class="p">)</span>
-    <span class="k">try</span><span class="p">:</span> 
-        <span class="k">for</span> <span class="n">footnote</span> <span class="ow">in</span> <span class="n">temp</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">footnote</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">temp</span><span class="p">)):</span>
+        <span class="k">try</span><span class="p">:</span>
             <span class="n">sections</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">footnote</span><span class="p">,[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">section_names</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
-    <span class="k">except</span><span class="p">:</span>
-        <span class="k">pass</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">pass</span>
     <span class="n">footnote_list</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
     
 <span class="n">df_footnotes</span><span class="o">=</span><span class="n">generate_dataframe</span><span class="p">(</span><span class="n">footnote_list</span><span class="p">,</span><span class="n">sections</span><span class="p">,</span><span class="bp">True</span><span class="p">,</span><span class="bp">True</span><span class="p">)</span>
@@ -11943,7 +11943,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[132]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Note: This will not find citations in footnotes or in figures</span>
@@ -11958,11 +11958,11 @@ div#notebook {
         <span class="n">xml_from_file</span> <span class="o">=</span> <span class="n">get_word_xml</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="s1">&#39;document&#39;</span><span class="p">)</span>
         <span class="n">xml_tree</span> <span class="o">=</span> <span class="n">get_xml_tree</span><span class="p">(</span><span class="n">xml_from_file</span><span class="p">)</span>
         <span class="n">temp</span><span class="o">=</span><span class="n">get_citations</span><span class="p">(</span><span class="n">xml_tree</span><span class="p">)</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="k">for</span> <span class="n">footnote</span> <span class="ow">in</span> <span class="n">temp</span><span class="p">:</span>
-                <span class="n">sections</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">footnote</span><span class="p">,[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">section_names</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
-        <span class="k">except</span><span class="p">:</span>
-            <span class="k">pass</span>
+        <span class="k">for</span> <span class="n">citation</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">temp</span><span class="p">)):</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">sections</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">citation</span><span class="p">,[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">section_names</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="k">pass</span>
         <span class="n">citation_list</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
 
 <span class="n">df_citations</span><span class="o">=</span><span class="n">generate_dataframe</span><span class="p">(</span><span class="n">citation_list</span><span class="p">,</span><span class="n">sections</span><span class="p">,</span> <span class="bp">False</span><span class="p">,</span><span class="bp">True</span><span class="p">)</span>
