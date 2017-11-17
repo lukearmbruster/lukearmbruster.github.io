@@ -6,7 +6,7 @@ author_profile: true
 ---
 **List of Recent Programming Projects**  
 (In order of most recent)
-- A tool that scans and grades a test sheet using OMR, Python, and OpenCV: [Github](https://github.com/lukearmbruster/project_scantron_replacement/blob/master/project_scantron_replacement.ipynb)
+- A tool that scans and grades a test sheet using OMR, Python, and OpenCV: [Jupyter Notebook](project_scantron_replacement.html), [Github](https://github.com/lukearmbruster/project_scantron_replacement/blob/master/project_scantron_replacement.ipynb)
 - A tool to extract footnotes and in-text citations from several word documents (.docx) and show similarities: [Jupyter Notebook](extract_footnotes_citations.html)
 - A tool to show how many pledges are needed for a successful crowdfunding campaign based on a model fit on campaign data covering several months in 2017: [Jupyter Notebook](Indiegogo_Pledges_Needed.html), [Github](https://github.com/lukearmbruster/successful_crowdfunding/tree/master)
 - An evaluation of key performance indicators (KPI) for a subset of the World of Warcraft (WOW) dataset on Kaggle using the Python programming language: [Jupyter Notebook](WOW_KPI_EDA.html), [Github](https://github.com/lukearmbruster/WOW_KPI_EDA)
